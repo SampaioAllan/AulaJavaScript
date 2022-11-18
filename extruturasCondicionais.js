@@ -34,3 +34,17 @@ switch (numero) {
         break;
 }
 
+///////////////////////////////////////////////////
+//Devo tranformar o código abaixo
+//trocando "if-else" por ternário
+var hora =1
+var minutos = 0
+if (hora >0){
+    minutos = hora * 60
+} else{
+    minuto = 60
+}
+///////////////////
+var hora = 1
+var minutos = hora > 0 ? hora*60 : 60
+console.log(minutos)
