@@ -17,4 +17,20 @@ if(!terminotrabalho || !tenhocompromisso)
 } 
 
 ///////////////////////////////////////////////////
+var numero = 10
+
+switch (numero) {
+    case 2:
+        console.log(numero + " é primo")
+        break;
+
+    default:
+        var primo = true
+        for (let index = numero-1; primo === true && index > 1; index --) {
+            primo = numero%index === 0 ? false : true
+        }
+        var resposta = primo ? (numero + " é primo") : (numero + " não é primo")
+        console.log(resposta)
+        break;
+}
 
