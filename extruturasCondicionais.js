@@ -17,7 +17,7 @@ if(!terminotrabalho || !tenhocompromisso)
 } 
 
 ///////////////////////////////////////////////////
-var numero = 10
+var numero = 7
 
 switch (numero) {
     case 2:
@@ -26,9 +26,13 @@ switch (numero) {
 
     default:
         var primo = true
-        for (let index = numero-1; primo === true && index > 1; index --) {
+        var next = true
+        for (let index = numero-1; primo && index > 1; index --) {
             primo = numero%index === 0 ? false : true
         }
+        next= !primo?true: false
+        
+
         var resposta = primo ? (numero + " é primo") : (numero + " não é primo")
         console.log(resposta)
         break;
