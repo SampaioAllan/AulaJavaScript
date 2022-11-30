@@ -26,12 +26,9 @@ switch (numero) {
 
     default:
         var primo = true
-        var next = true
         for (let index = numero-1; primo && index > 1; index --) {
             primo = numero%index === 0 ? false : true
         }
-        next= !primo?true: false
-        
 
         var resposta = primo ? (numero + " é primo") : (numero + " não é primo")
         console.log(resposta)
